@@ -18,3 +18,10 @@ html {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+.MessegeNoTasks {
+    text-align: center;
+    font-size: 20px;
+    color: #383838;
+    margin-top: 20px;
+}
