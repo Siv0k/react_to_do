@@ -1,7 +1,8 @@
 import React from 'react'
 import TaskContainer from './TaskContainer'
 
-const TaskList = ({tasks, remove, done}) => {
+const TaskList = (props) => {
+  const {tasks, remove, done} = props;
   return (
     <div>
         {tasks.map((task) => 

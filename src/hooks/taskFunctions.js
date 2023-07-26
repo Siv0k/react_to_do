@@ -23,6 +23,11 @@ export const useTasks = () => {
     setDoneTasks((prevTasks) => prevTasks.filter((task) => task.id !== taskId));
   };
 
+  const taskNotDone = (taskId) => {
+    const notDoneTask = doneTasks.find((task) => task.id === taskId);
+    removeDoneTask(taskId);
+    setTasks([...tasks, {...notDoneTask, done: false}]);
+  }
   return {
     tasks,
     doneTasks,
@@ -30,5 +35,6 @@ export const useTasks = () => {
     removeTask,
     doneTask,
     removeDoneTask,
+    taskNotDone,
   };
 };

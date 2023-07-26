@@ -6,10 +6,10 @@
     margin: 0px 15px;
     padding: 0;
     background-color: #050561;
+    color: #33dd6c;
 }
 
-.isComplitedTaskButton:hover::before  {
-    content: '\2714';
-    color: #33dd6c;
-    text-align: center;
+.isComplitedTaskButton:hover {
+    border: 2px solid #175f2f;
+    color: #175f2f;
 }

@@ -4,11 +4,19 @@ import IsComplitedTaskButton from "./UI/IsComplitedTaskButton/IsComplitedTaskBut
 import DeleteTaskButton from "./UI/DeleteTaskButton/DeleteTaskButton";
 
 const TaskContainer = (props) => {
+  const { task, remove, done } = props;
+  const handleRemove = () => {
+    remove(task.id);
+  };
+
   return (
     <div className="taskContainer">
-      <div className="taskContent"> { props.task.title } </div>
-      <IsComplitedTaskButton onClick = { () => props.done(props.task.id)} />
-      <DeleteTaskButton onClick = { () => props.remove(props.task.id)} />
+      <div className="taskContent"> { task.title } </div>
+      <IsComplitedTaskButton 
+      done = { task.done }
+      onClick = { done } 
+      />
+      <DeleteTaskButton onClick = { handleRemove} />
     </div>
   );
 };

@@ -13,6 +13,7 @@ function App() {
     removeTask,
     doneTask,
     removeDoneTask,
+    taskNotDone,
   } = useTasks();
 
   return (
@@ -26,7 +27,7 @@ function App() {
       <hr />
       {doneTasks.length === 0
       ? <div className="MessegeNoTasks">Завершенных задач нет</div>  
-      : <DoneTaskList  remove = {removeDoneTask} tasks = {doneTasks}/>
+      : <DoneTaskList taskNotDone = {taskNotDone} remove = {removeDoneTask} tasks = {doneTasks}/>
       }   
     </div>
   );
