@@ -1,0 +1,17 @@
+.taskInput {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background-color: #0d0d8d;
+    color: #fff;
+}
+
+.taskInput:focus {
+    outline: none;
+}
+
+.taskInput::placeholder {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}

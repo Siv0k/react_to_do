@@ -1,0 +1,12 @@
+.addTaskButton {
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #33dd6c;
+    color: #fff;
+    cursor: pointer;
+    font-size: large;
+}

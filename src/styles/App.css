@@ -1,0 +1,20 @@
+html {
+    background-color: #e7e6e6;
+}
+
+.App {
+    max-width: 1000px;
+    min-width: 250px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #e62253;
+    color: #fff;
+    padding: 20px 0;
+    border: 0px solid #e62253;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
