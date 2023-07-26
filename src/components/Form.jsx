@@ -4,7 +4,7 @@ import TaskInput from './UI/TaskInput/TaskInput';
 import AddTaskButton from './UI/AddTaskButton/AddTaskButton';
 
 const Form = ({create}) => {
-    const [task, setTask] = useState([{title: '',}]) 
+    const [task, setTask] = useState([{title: ''}]) 
 
     const addNewTask = (e) => {
       e.preventDefault();

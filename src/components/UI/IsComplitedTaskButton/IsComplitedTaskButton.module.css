@@ -8,7 +8,7 @@
     background-color: #050561;
 }
 
-.isComplitedTaskButton:hover::after {
+.isComplitedTaskButton:hover::before  {
     content: '\2714';
     color: #33dd6c;
     text-align: center;

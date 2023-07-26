@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './DeleteTaskButton.module.css'
 
-const DeleteTaskButton = () => {
+const DeleteTaskButton = ({ onClick }) => {
   return (
-    <button className = {classes.deleteTaskButton}>&#10006;</button>
+    <button className = {classes.deleteTaskButton} onClick={onClick}>&#10006;</button>
   )
 }
 

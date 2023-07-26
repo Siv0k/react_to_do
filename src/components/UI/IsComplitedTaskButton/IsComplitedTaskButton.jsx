@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './IsComplitedTaskButton.module.css'
 
-const IsComplitedTaskButton = () => {
+const IsComplitedTaskButton = ({onClick}) => {
   return (
-    <button className = {classes.isComplitedTaskButton} >  </button>
+    <button className = {classes.isComplitedTaskButton} onClick={onClick}>  </button>
   )
 }
 
