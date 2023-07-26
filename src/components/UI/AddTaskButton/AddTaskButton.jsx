@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from './AddTaskButton.module.css'
-const AddTaskButton = () => {
+const AddTaskButton = (props) => {
   return (
-    <button className = {classes.addTaskButton}>+</button>
+    <button {...props} className = {classes.addTaskButton}>+</button>
   )
 }
 

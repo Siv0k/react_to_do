@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './TaskInput.module.css'
 
-const TaskInput = () => {
+const TaskInput = (props) => {
   return (
-    <input className = {classes.taskInput} type="text" placeholder='Какие планы?...' />
+    <input {...props} className = {classes.taskInput} type="text" placeholder='Какие планы?...' />
   )
 }
 

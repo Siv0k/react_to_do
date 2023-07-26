@@ -1,0 +1,17 @@
+.taskContainer {
+    width: inherit;
+    background-color: #050561;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskContent {
+    display: inline-block;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;   
+}
