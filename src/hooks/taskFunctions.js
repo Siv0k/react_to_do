@@ -33,7 +33,16 @@ export const useTasks = () => {
     const notDoneTask = doneTasks.find((task) => task.id === taskId);
     removeDoneTask(taskId);
     setTasks([...tasks, {...notDoneTask, done: false}]);
-  }
+  };
+
+  const checkEmptyTask = (task) => {
+    if(!task.title || task.title.trim() === '' ) {
+      alert('Введите название задачи');
+      return true;
+    }
+    return false;
+  };
+
   return {
     tasks,
     doneTasks,
@@ -42,5 +51,6 @@ export const useTasks = () => {
     doneTask,
     removeDoneTask,
     taskNotDone,
+    checkEmptyTask,
   };
 };

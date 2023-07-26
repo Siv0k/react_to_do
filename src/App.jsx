@@ -14,6 +14,7 @@ function App() {
     doneTask,
     removeDoneTask,
     taskNotDone,
+    checkEmptyTask,
   } = useTasks();
 
   React.useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <div className="header">TODO LIST</div>  
-      <Form create = {createTask} />
+      <Form create = {createTask} checkEmptyTask = {checkEmptyTask} tasks = {tasks} doneTasks = {doneTasks}/>
       {tasks.length === 0 
       ? <div className="MessegeNoTasks">Задач нет</div> 
       : <TaskList done = {doneTask} remove = {removeTask} tasks = {tasks}/>
