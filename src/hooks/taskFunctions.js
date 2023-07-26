@@ -1,8 +1,14 @@
 import { useState } from "react";
 
 export const useTasks = () => {
-  const [tasks, setTasks] = useState([]);
-  const [doneTasks, setDoneTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
+  const [doneTasks, setDoneTasks] = useState(() => {
+    const savedDoneTasks = localStorage.getItem("doneTasks");
+    return savedDoneTasks ? JSON.parse(savedDoneTasks) : [];
+  });
 
   const createTask = (newTask) => {
     newTask.id = Date.now();

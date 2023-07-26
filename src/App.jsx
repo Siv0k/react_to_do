@@ -16,6 +16,11 @@ function App() {
     taskNotDone,
   } = useTasks();
 
+  React.useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem('doneTasks', JSON.stringify(doneTasks));
+  }, [tasks, doneTasks]);
+
   return (
     <div className="App">
       <div className="header">TODO LIST</div>  

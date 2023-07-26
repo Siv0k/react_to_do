@@ -8,9 +8,14 @@ const Form = ({create}) => {
 
     const addNewTask = (e) => {
       e.preventDefault();
+      if(task.title.trim() === '') {
+        alert('Введите название задачи');
+        return;
+      }
       const newTask = {
         ...task,
       }
+      
       create(newTask);
       setTask({title: ''})
   }
